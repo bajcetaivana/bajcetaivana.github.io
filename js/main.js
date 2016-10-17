@@ -59,7 +59,7 @@ $(document).ready(function(){
 				theemployees.addClass("grid");
 			}
 
-        }
+        
 
         if($(this).hasClass("active")) {
 			// if currently clicked button has the active class
