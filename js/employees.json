@@ -1,0 +1,10 @@
+{
+  "employees" : [
+   {"imgPath":"./images/employees/grid-default-thumb.png","Name":"John Doe","Description":"Licensed Administrator","E_mail":"johndoe@example.com"},
+       {"imgPath":"./images/employees/grid-default-thumb.png","Name":"David Smith","Description":"Instruction Unit","E_mail":"daviddoe@example.com"},
+       {"imgPath":"./images/employees/grid-default-thumb.png","Name":"Alison Wenson","Description":"Education Services","E_mail":"aldoe@example.com"},
+       {"imgPath":"./images/employees/grid-default-thumb.png","Name":"Anna Nabokov","Description":"Facilities","E_mail":"annadoe@example.com"},
+       {"imgPath":"./images/employees/grid-default-thumb.png","Name":"Michael Lynch","Description":"Business and Finance","E_mail":"michaeldoe@example.com"},
+       {"imgPath":"./images/employees/grid-default-thumb.png","Name":"Ryan Jarmusch","Description":"Human Resources","E_mail":"ryandoe@example.com"}
+  ]
+}
