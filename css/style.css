@@ -75,11 +75,11 @@ textarea:focus,*/  input:focus{
   width:100%;
 }
 
-
-
-#show-list{
+#show-list, 
+#show-grid {
   display:none;
 }
+
 /*list-style*/
 .list th {
   text-align: left;
@@ -219,7 +219,8 @@ textarea:focus,*/  input:focus{
   width:700px;
 }
 
-#show-list{
+#show-list, 
+#show-grid {
   display:inline;
 }
 
