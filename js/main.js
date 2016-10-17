@@ -50,11 +50,18 @@ $(document).ready(function(){
 		var theid = $(this).attr("id");
 		var theemployees = $("table#rows");
 		var classNames = $(this).attr('class').split(' ');
-        var windowWidth = $(window).width();
-        if(windowWidth > 768){
-    
 
-		if($(this).hasClass("active")) {
+
+        var windowWidth = $(window).width();
+        if(windowWidth < 768){
+				// remove the list class and change to grid
+				theemployees.removeClass("list");
+				theemployees.addClass("grid");
+			}
+
+        }
+
+        if($(this).hasClass("active")) {
 			// if currently clicked button has the active class
 			// then we do nothing!
 			return false;
@@ -90,7 +97,7 @@ $(document).ready(function(){
 				theemployees.addClass("grid");		
 			}
 		}
-		}
+		
 
 	});
 });
