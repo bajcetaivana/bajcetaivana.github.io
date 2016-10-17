@@ -75,12 +75,78 @@ textarea:focus,*/  input:focus{
   width:100%;
 }
 
+
+
 #show-list, 
 #show-grid {
   display:none;
 }
 
 
+/*list-style*/
+.list th {
+  text-align: left;
+  flex-basis: 25%;
+  font-size: 14px;
+  display: inline-block;
+  padding: 20px 0px;
+  padding-left:10px;
+}
+
+.list th:first-child {
+  text-align: center;
+  flex-basis: auto;
+  visibility: hidden;
+  width: 40px;
+  padding-left:0px;
+}
+
+.list th:last-child {
+  flex-basis: 40%;
+}
+
+.list tr {
+  display:flex;
+  padding:2%;
+  display: flex;
+  align-items: center;
+}
+
+#table-head {
+  background-color: #d7dfe0;
+}
+
+
+.list tr:nth-child(odd) {
+	background-color: #c9d0d1;
+}
+
+.list td {
+  text-align:left; 
+  flex-basis:25%;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 14px;
+  padding:0px;
+  padding-left:10px;
+}
+
+.list td:first-child {
+  text-align: center; 
+  flex-basis: auto;
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  padding:0px;
+}
+
+.list td:last-child {
+  text-transform: none;
+  flex-basis: 40%;
+}
+
+.odd {
+	background-color: #fff;
+}
 
 /*grid-style*/ 
 .grid {
@@ -162,70 +228,6 @@ textarea:focus,*/  input:focus{
 }
 
 /*list-style*/
-.list th {
-  text-align: left;
-  flex-basis: 25%;
-  font-size: 14px;
-  display: inline-block;
-  padding: 20px 0px;
-  padding-left:10px;
-}
-
-.list th:first-child {
-  text-align: center;
-  flex-basis: auto;
-  visibility: hidden;
-  width: 40px;
-  padding-left:0px;
-}
-
-.list th:last-child {
-  flex-basis: 40%;
-}
-
-.list tr {
-  display:flex;
-  padding:2%;
-  display: flex;
-  align-items: center;
-}
-
-#table-head {
-  background-color: #d7dfe0;
-}
-
-
-.list tr:nth-child(odd) {
-  background-color: #c9d0d1;
-}
-
-.list td {
-  text-align:left; 
-  flex-basis:25%;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size: 14px;
-  padding:0px;
-  padding-left:10px;
-}
-
-.list td:first-child {
-  text-align: center; 
-  flex-basis: auto;
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  padding:0px;
-}
-
-.list td:last-child {
-  text-transform: none;
-  flex-basis: 40%;
-}
-
-.odd {
-  background-color: #fff;
-}
-
 .list td, 
 .list td:last-child,
 .list th, 

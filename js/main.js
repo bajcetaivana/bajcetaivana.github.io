@@ -40,6 +40,8 @@ $('#search').keyup(function () {
 
 
 
+
+
 $(document).ready(function(){
 
 	$("a.switch").on("click", function(e){
@@ -48,6 +50,9 @@ $(document).ready(function(){
 		var theid = $(this).attr("id");
 		var theemployees = $("table#rows");
 		var classNames = $(this).attr('class').split(' ');
+        var windowWidth = $(window).width();
+        if(windowWidth > 768){
+    
 
 		if($(this).hasClass("active")) {
 			// if currently clicked button has the active class
@@ -84,6 +89,7 @@ $(document).ready(function(){
 				theemployees.removeClass("list")
 				theemployees.addClass("grid");		
 			}
+		}
 		}
 
 	});
