@@ -77,7 +77,9 @@ textarea:focus,*/  input:focus{
 
 
 
-
+#show-list{
+  display:none;
+}
 /*list-style*/
 .list th {
   text-align: left;
@@ -187,8 +189,8 @@ textarea:focus,*/  input:focus{
 
 .grid td {
   font-family: "Trebuchet MS", Arial, sans-serif;
-  font-size:1.4em;
-  text-align:left;
+  /*font-size:1.2em;
+  text-align:left;*/
   margin-bottom:4%;
 }
 
@@ -215,6 +217,10 @@ textarea:focus,*/  input:focus{
 
 #wrap {
   width:700px;
+}
+
+#show-list{
+  display:inline;
 }
 
 /*list-style*/

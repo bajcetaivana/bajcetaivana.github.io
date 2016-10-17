@@ -57,21 +57,7 @@ $(document).ready(function(){
 			// otherwise we are clicking on the inactive button
 			// and in the process of switching views!
 
-  			if(theid == "show-grid") {
-				$(this).addClass("active");
-				$("#listview").removeClass("active");
-
-				$("#listview").children("img").attr("src","images/list-view.png");
-
-				var theimg = $(this).children("img");
-				theimg.attr("src","images/grid-view-active.png");
-
-				// remove the list class and change to grid
-				theemployees.removeClass("list");
-				theemployees.addClass("grid");
-			}
-
-			else if(theid == "listview") {
+  			if(theid == "show-list") {
 				$(this).addClass("active");
 				$("#show-grid").removeClass("active");
 
@@ -80,9 +66,23 @@ $(document).ready(function(){
 				var theimg = $(this).children("img");
 				theimg.attr("src","images/list-view-active.png");
 
+				// remove the list class and change to grid
+				theemployees.removeClass("grid");
+				theemployees.addClass("list");
+			}
+
+			else if(theid == "show-grid") {
+				$(this).addClass("active");
+				$("#show-list").removeClass("active");
+
+				$("#show-list").children("img").attr("src","images/list-view.png");
+
+				var theimg = $(this).children("img");
+				theimg.attr("src","images/grid-view-active.png");
+
 				// remove the grid view and change to list
-				theemployees.removeClass("grid")
-				theemployees.addClass("list");		
+				theemployees.removeClass("list")
+				theemployees.addClass("grid");		
 			}
 		}
 
